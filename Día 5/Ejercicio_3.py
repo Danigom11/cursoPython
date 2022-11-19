@@ -1,7 +1,8 @@
 def cero_repetido(*args):
     contador = 0
-    repetido = 0
+
     for numero in args:
+        # if args[contador] == 0 and args[contador + 1] == 0
         if numero == 0 and contador == 0:
             contador += 1
             continue

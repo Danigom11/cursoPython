@@ -3,6 +3,7 @@ def devolver_distintos(num1, num2, num3):
     lista = [num1, num2, num3]
     lista.sort()
 
+    # Tambien se pueden hacer las dos primeras opciones con max y min
     if suma > 15:
         retorno = lista[2]
         return retorno
