@@ -1,3 +1,6 @@
+# Args se define con un *
+# Se puede poner el nombre que se quiera
+# Por convención se pone args
 def suma(*args):
     return sum(args)
 

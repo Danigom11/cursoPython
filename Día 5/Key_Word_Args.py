@@ -1,4 +1,6 @@
 # Args con diccionarios
+# se define con dos asteriscos y la palabra que sea
+# por convencion kwargs
 
 def suma(**kwargs):
     total = 0
@@ -31,4 +33,28 @@ suma2(15, 50, args, kwargs)
 # para desempacar listas y diccionarios
 suma2(15, 50, *args, **kwargs)
 
+
 # Ejercicio 1
+def cantidad_atributos(**kwargs):
+    total = 0
+    for atributo in kwargs:
+        total += 1
+    return total
+
+
+# Ejercicio 2
+def lista_atributos(**kwargs):
+    lista = []
+    for atributo in kwargs.values():
+        lista.append(atributo)
+    return lista
+
+
+# Ejercicio 3
+def describir_persona(nombre, **kwargs):
+    print(f"Características de {nombre}:")
+    for nombre, valor in kwargs.items():
+        print(f"{nombre}: {valor}")
+
+
+describir_persona("María", color_ojos="azules", color_pelo="rubio")
