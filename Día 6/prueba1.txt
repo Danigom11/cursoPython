@@ -1,0 +1,7 @@
+Soy el nuevo textoSin salto de lineaCon salto
+Con salto
+de
+lineaholamundoaquíestoyhola
+mundo
+aquí
+estoy

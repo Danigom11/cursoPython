@@ -18,3 +18,33 @@ for p in lista:
     archivo.writelines(p + "\n")
 
 archivo.close()
+
+archivo = open("mi_archivo.txt", "a")
+
+archivo.write("Nuevo inicio de sesión")
+
+archivo.close()
+
+archivo = open("mi_archivo.txt", "r")
+
+for linea in archivo:
+    print(linea)
+
+archivo.close()
+
+mi_registro = open("registro.txt", "w")
+
+mi_registro.close()
+
+mi_registro = open("registro.txt", "a")
+
+registro_ultima_sesion = ["Federico", "\t", "20/12/2021","\t", "08:17:32 hs","\t", "Sin errores de carga"]
+mi_registro.writelines(registro_ultima_sesion)
+
+mi_registro.close()
+
+mi_registro = open("registro.txt", "r")
+for p in mi_registro:
+    print(p)
+
+

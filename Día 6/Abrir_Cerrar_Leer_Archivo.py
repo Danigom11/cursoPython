@@ -6,7 +6,6 @@ print(mi_archivo)
 todas = mi_archivo.readlines()
 todas = todas.pop()
 print(todas)
-
 for linea in mi_archivo:
     print("Aquí dice: " + linea)
 
