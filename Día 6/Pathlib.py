@@ -26,7 +26,3 @@ else:
 # importar PureWindowsPath
 ruta_windows = PureWindowsPath(carpeta)
 print(ruta_windows)
-
-
-
-
