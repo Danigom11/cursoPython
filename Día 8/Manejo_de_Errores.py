@@ -81,10 +81,6 @@ def cociente(num1, num2):
         print("El segundo argumento no debe ser cero")
 
 
-# MENSAJE EN PANTALLA
-"Los argumentos a ingresar deben ser números"
-"El segundo argumento no debe ser cero"
-
 # Ejercicio 3
 """
 Ejemplo de resolución:
