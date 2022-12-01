@@ -51,6 +51,5 @@ def mostrar_todo():
     print('-' * 50)
 
 
-
 crear_listas()
 mostrar_todo()
