@@ -1,5 +1,6 @@
 import re
 
+"""
 texto = "Si necesitas ayuda llama al (658)-598-9977 las 24 horas al servicio de ayuda online"
 
 palabra = 'ayuda' in texto
@@ -11,15 +12,15 @@ patron = 'ayuda'
 busqueda = re.search(patron, texto)
 print(busqueda)
 
-# SEARCH.SPAN solo la ubicación
+# SEARCH SPAN solo la ubicación
 busqueda = re.search(patron, texto)
 print(busqueda.span())
 
-# SEARCH.START ubicación comienzo
+# SEARCH START ubicación comienzo
 busqueda = re.search(patron, texto)
 print(busqueda.start())
 
-# SEARCH.END final
+# SEARCH END final
 busqueda = re.search(patron, texto)
 print(busqueda.end())
 
@@ -41,7 +42,7 @@ patron = r'\d\d\d-\d\d\d-\d\d\d\d'
 resultado = re.search(patron, texto)
 
 print(resultado)
-# .GROUP para obtener el resultado concreto
+# GROUP para obtener el resultado concreto
 print(resultado.group())
 
 # {} poner cantidad de veces que se repite el número
@@ -72,11 +73,11 @@ texto = "No atendemos los lunes por la tarde"
 buscar = re.search(r'lunes|martes', texto)
 print(buscar)
 
-# . COMODÍN cada uno que se ponga busca un espacio antes
+# PUNTO: COMODÍN cada uno que se ponga busca un espacio antes
 buscar = re.search(r'......demos', texto)
 print(buscar)
 
-# SI UN PATRÓN ESTÁ AL COMIENZO acento circunflejo
+# ^ SI UN PATRÓN ESTÁ AL COMIENZO acento circunflejo 
 # buscar si no empieza con un número
 buscar = re.search(r'^\D', texto)
 print(buscar)
@@ -94,4 +95,36 @@ buscar = re.findall(r'[^\s]+', texto)
 print(buscar)
 # texto entero sin espacios vacios
 print(''.join(buscar))
+"""
 
+
+# Ejercicio 1
+def verificar_email(email):
+    patron = r'@\w+\.com'
+    verificar = re.search(patron, email)
+    if verificar:
+        print("Ok")
+    else:
+        print("La dirección de email es incorrecta")
+
+
+verificar_email("danigom11@gmail.com")
+
+# Ejercicio 2
+def verificar_saludo(frase):
+    patron = r'^Hola'
+    verificar = re.search(patron, frase)
+    if verificar:
+        print("Ok")
+    else:
+        "No has saludado"
+
+
+# Ejercicio 3
+def verificar_cp(cp):
+    patron = r'\w{2}\d{4}'
+    verificar = re.search(patron, cp)
+    if verificar:
+        print("Ok")
+    else:
+        print("El código postal ingresado no es correcto")
